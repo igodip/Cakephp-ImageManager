@@ -20,7 +20,7 @@ class Image extends ImageManagerAppModel {
                     'xxvga' => '1920x1080',
                     'xvga' => '1280x720',
                     'vga' => '640x480',
-                    'thumb' => '80x80'
+                    'thumb' => '80x60'
                 )
 			)
         )

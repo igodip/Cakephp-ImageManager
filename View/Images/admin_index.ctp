@@ -9,7 +9,7 @@
 	<?php foreach ($images as $image): ?>
 	<tr>
 		<td><?php echo h($image['Image']['id']); ?>&nbsp;</td>
-		<td><?php echo h($image['Image']['path']); ?>&nbsp;</td>
+		<td><?php echo $this->Html->image(h('/files/image/path/'.$image['Image']['id'].'/thumb_'.$image['Image']['path'])); ?>&nbsp;</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $image['Image']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $image['Image']['id'])); ?>
